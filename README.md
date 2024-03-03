@@ -20,10 +20,10 @@ Add the following to your projects `tscongig.json` `compilerOptions`:
 ### [Snip20](./src/modules/snip20/admin/)
 ### [Snip721](./src/modules/snip721/amm_pair)
 ### [Shade](./src/modules/shade/factory)
-#### [Admin](./src/modules/shade/lp_token)
-#### [AmmPair](./src/modules/shade/router)
-#### [Factory](./src/modules/shade/factory)
-#### [Router](./src/modules/shade/)
+ - [Admin](./src/modules/shade/lp_token)
+ - [AmmPair](./src/modules/shade/router)
+ - [Factory](./src/modules/shade/factory)
+ - [Router](./src/modules/shade/)
 
 
 ## Development
