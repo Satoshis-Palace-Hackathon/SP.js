@@ -1,0 +1,62 @@
+{
+  "name": "spjs",
+  "version": "2.2.0",
+  "description": "",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "tsc",
+    "test": "jest --verbose --runInBand",
+    "deploy": "ts-node ./src/deployment/deploy.ts",
+    "clean-build": "npm run clean && npm run build",
+    "clean-build-test": "npm run clean && npm run build && npm run test",
+    "test-snip20": "jest --verbose --runInBand snip20.test.ts",
+    "test-snip721": "jest --verbose --runInBand snip721.test.ts",
+    "test-shade-amm-pair": "jest --verbose --runInBand amm_pair.test.ts",
+    "test-shade-factory": "jest --verbose --runInBand factory.test.ts",
+    "test-shade-admin": "jest --verbose --runInBand admin.test.ts",
+    "test-shade-router": "jest --verbose --runInBand router.test.ts",
+    "test-shade-abstraction": "jest --verbose --runInBand shade.test.ts",
+    "convert-schema": "ts-node ./src/convert-schema.ts ./schema/router ./schema/router/types"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^29.5.10",
+    "@types/whatwg-fetch": "^0.0.33",
+    "dotenv": "^16.3.1",
+    "rimraf": "^5.0.5",
+    "ts-jest": "^29.1.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.2"
+  },
+  "dependencies": {
+    "@shadeprotocol/shadejs": "^1.0.9",
+    "bignumber.js": "^9.1.2",
+    "buffer": "^6.0.3",
+    "json-schema-to-typescript": "^13.1.2",
+    "secretjs": "^1.12.3",
+    "whatwg-fetch": "^3.6.20"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node",
+    "testTimeout": 50000,
+    "testMatch": [
+      "**/*.test.ts"
+    ],
+    "transform": {
+      "^.+\\.ts$": [
+        "ts-jest",
+        {
+          "tsconfig": "<rootDir>/tsconfig.json"
+        }
+      ]
+    },
+    "setupFiles": [
+      "<rootDir>/src/polyfills.ts"
+    ]
+  }
+}

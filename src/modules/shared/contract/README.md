@@ -1,0 +1,2 @@
+# Contract Module
+A base class for interacting with secret network contracts. Offers basic querying and executing functionality, as well as several helper methods. Should be extended by more specific contract modules to offer contract specific functionality in an easy to use manner.

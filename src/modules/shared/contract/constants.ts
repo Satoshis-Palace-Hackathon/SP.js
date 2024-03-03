@@ -1,0 +1,2 @@
+export const DEFAULT_PADDING_LENGTH = 20
+export const DEFAULT_ENTROPY_LENGTH = 30
