@@ -4,7 +4,7 @@ A comprehensive object oriented modular package for deploying interacting with a
 ## Usage
 Add the following to your `package.json` `dependencies`
 ```
-	"spjs": "github:SatoshisPalace/SP.js"
+	"spjs": "github:Satoshis-Palace-Hackathon/SP.js"
 ```
 
 Add the following to your projects `tscongig.json` `compilerOptions`:
@@ -27,12 +27,6 @@ Add the following to your projects `tscongig.json` `compilerOptions`:
 
 
 ## Development
-
-### Deployment
-```
-npm run deploy
-```
-
 ### Compile
 ```
 nvm install
@@ -42,9 +36,6 @@ nvm use
 ```
 ```
 npm install
-```
-```
-npm run build
 ```
 ### [Tests](./src/tests/)
 ```
