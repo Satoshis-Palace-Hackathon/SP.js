@@ -1,6 +1,6 @@
 # SP.js
 A comprehensive object oriented modular package for deploying interacting with and testing *Satoshi's Palace* smart contracts.
-
+See our [examples](./Examples.md)!
 ## Usage
 Add the following to your `package.json` `dependencies`
 ```
