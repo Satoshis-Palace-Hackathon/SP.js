@@ -20,6 +20,7 @@ const snip721ContractInfo: ContractInfo = {
 }
 const snip721 = new Snip721(snip721ContractInfo, secretjs);
 const config = await snip721.contract_config();
+const ownerOfToken = snip721.owner_of("token_id")
 ```
 # Shade
 ## Shade
